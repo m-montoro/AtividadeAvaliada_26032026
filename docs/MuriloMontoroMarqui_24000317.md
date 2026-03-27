@@ -24,10 +24,15 @@ Explique claramente: Meu MVP cobre o processo central de funcionamento comercial
 Liste e descreva **cada RN** de forma clara.
 
 **RN01 —**  **Venda de Medicamentos Controlados:** O sistema só eve permitir a venda de um medicamento controlado, assim como os famosos tarja preta, a partir do momento em que esta totalemtnte preenchido os dados da receita médica
+
 **RN02 —**  **Bloqueio por Estoque insuficiente:** Fica proibido adicionar ao carrinho de compras uma quantidade de produtos maior do que a disponivel no estoque.
+
 **RN03 —**  **Limite de Desconto por Balconista:** Cada balconista só pode conceder até 10% de desconto no valor total da vende, caso tenha descontos superiores a isso, vai ser necessário uma autenticação do gerente.
+
 **RN04 —**  **Produtos Vencidos:** O sistema não deve permitir a venda de lotes de medicamentos cujo prazo de validade ja tenha vencido.
+
 **RN05 —**  **Desconto para Terceira idade:** Clientes com idade igual ou superior a 60 anos possuem desconto automático de 5% em medicamentos genéricos (não acumulativo)
+
 **RN06 —** **Proibição de Troca de Medicamentos Controlados:** De acordo com as leis da Anvisa o sistema não pode permitir, sob nenhuma hipótese, o fluxo de devolução ou troca de medicamentos controlados após conclusão da venda. 
 
 
@@ -37,14 +42,23 @@ Liste e descreva **cada RN** de forma clara.
 Liste os requisitos funcionais do seu MVP.
 
 **RF01 —**  O sistema deve permitir o cadastro, alteração, consulta e intaivação de clientes.
+
 **RF02 —**  O sistema deve permitir o cadastro, alteração, consulta e inativação de medicamentos
+
 **RF03 —**  O sistema deve permitir que o usuário adiciona e remova itens de um carrinho durante a venda
+
 **RF04 —**  O sistema deve debitar automaticamente do estoque as quantidades de produtos vendidos após o momento da venda.
+
 **RF05 —**  O sistema deve permitir a insercção do CRM do médico, UF e nome do médico para remédios controlados
+
 **RF06 —**  O sistema deve calcular o valor total da venda, abatendo os descontos aplicados
+
 **RF07 —** O sistema deve processar o pagamento repassando os valores para o gateway de pagamento 
+
 **RF08 —** O sistema deve emitir e exibir na tela o cupom fiscal após a finalização da transação
+
 **RF09 —** O sistema deve gerar um relatório de fechamento de caixa no final do turno, para melhor análise do valor total vendido, separando por forma de pagamento
+
 **RF10 —** O sistema deve emitir um alerta visual na tela toda vez que um item for adicionado ao carrinho e o estoque atingir ou ficar abaixo da quantidade minima de segurança definida
 
 ---
@@ -53,10 +67,15 @@ Liste os requisitos funcionais do seu MVP.
 Liste os RNFs do sistema conforme seu MVP.
 
 **RNF01 —** **Desempanho** A consulta de medicamentos pelo nome ou código de barras deve retornar os resultados na dela em no máx. 2 seg
+
 **RNF02 —**  **Usabilidade** O PDV deve ser acessivel via navegador, sem necessidade de instalação local em cada terminal
+
 **RNF03 —**  **Segurança** Todas as senhas de usuários e dados sensíveis de clientes deve ser armazenatos utilizando criptografia 
+
 **RNF04 —** **Disponibilidade** O sistema deve manter um uptime durante o horário de funcionamento da farmácia
+
 **RNF05 —** **Rastreabilidade** O sistema deve registrar um log oculta e que não seja alterável de todas as vendas canceladas e dos descontos superiores aos permitidos para os balconistas, registrando quem fez, quando fez e quem autorizou
+
 **RNF06 —** **Responsividade** A interface deve ser otimizada e plenamnte funcional nos monitores dos caixas de farmácias
 
 
